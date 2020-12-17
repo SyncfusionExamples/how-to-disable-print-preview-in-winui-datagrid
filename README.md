@@ -1,2 +1,2 @@
-# how-to-disable-print-preview-in-winui-datagrid
+# How to disable print preview in winui datagrid?
 This example describes how to disable print preview in winui datagrid
