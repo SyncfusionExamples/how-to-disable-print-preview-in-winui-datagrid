@@ -1,12 +1,13 @@
-# How to disable print preview in WinUI DataGrid?
+# How to Disable Print Preview in WinUI DataGrid?
 
-This example describes how to disable print preview in WinUI DataGrid
+This example describes how to disable print preview in [WinUI DataGrid](https://www.syncfusion.com/winui-controls/datagrid) (SfDataGrid).
 
-**Disable print preview**
+### Disable print preview
 
-You can disable the print preview in print dialog by setting [PrintTask.IsPreviewEnabled](https://learn.microsoft.com/en-us/uwp/api/windows.graphics.printing.printtask.ispreviewenabled?view=winrt-19041) property to false.
+You can disable the print preview in print dialog by setting `PrintTask.IsPreviewEnabled` property to false.
 
- ```csharp
+#### C#
+```csharp
 sfDataGrid.PrintTaskRequested += DataGrid_PrintTaskRequested;
 
 private void DataGrid_PrintTaskRequested(object sender, DataGridPrintTaskRequestedEventArgs e)
@@ -18,4 +19,11 @@ private void DataGrid_PrintTaskRequested(object sender, DataGridPrintTaskRequest
 
     e.PrintTask.IsPreviewEnabled = false;
 } 
- ```
+```
+
+![DataGrid disabling the print preview](DisabledPrintPreview.png)
+
+Take a moment to peruse the [WinUI DataGrid - Printing](https://help.syncfusion.com/winui/datagrid/printing) documentation, where you can find about DataGrid printing with code examples.
+
+### Requirements to run the demo
+Visual Studio 2015 and above versions.
